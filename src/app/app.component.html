@@ -1,0 +1,9 @@
+<div>
+  <h1>SetTimeOut Count: {{ count }}</h1><br>
+  <h1>SetInterval Count: {{ counter }} </h1>
+</div>
+
+
+<!-- <button type="button" (click)="buttonClick($event)">Click with change detection!</button> <br><br> -->
+<button type="button" myDirective (eventHandler)="buttonClick($event)" [event]= "'click'">Click without change detection</button>
+
